@@ -1,1 +1,5 @@
-<p>logo works!</p>
+<div class="logo">
+  @for (c of couleurs; track c) {
+    <div class="case" [style.background-color]="c"></div>
+  }
+</div>
