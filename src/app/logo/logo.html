@@ -1,5 +1,5 @@
 <div class="logo">
   @for (c of couleurs; track c) {
-    <div class="case" [style.background-color]="c"></div>
+    <div class="case" [style.background-color]="c" (click)="choisir(c)"></div>
   }
 </div>

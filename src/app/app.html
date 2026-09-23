@@ -1,9 +1,9 @@
-<div class="page">
+<div class="page" [style.background-color]="couleurFond">
   <app-header></app-header>
   <main>
-  <div class="carre">
-    <app-logo></app-logo>
-  </div>
+    <div class="carre">
+      <app-logo (couleurChoisie)="changerCouleur($event)"></app-logo>
+    </div>
   </main>
   <app-footer></app-footer>
 </div>

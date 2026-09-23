@@ -12,5 +12,11 @@ import { Logo } from './logo/logo';
 })
 export class App {
   protected readonly title = signal('InsafeMalakTP1');
+
+  couleurFond = 'white';
+
+  changerCouleur(couleur: string) {
+    this.couleurFond = couleur;
+  }
 }
 
