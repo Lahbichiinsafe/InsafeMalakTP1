@@ -6,11 +6,11 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrl: './logo.scss'
 })
 export class Logo {
-  couleurs = ['#F25022', '#7FBA00', '#00A4EF', '#FFB900'];
+  protected readonly couleurs: string[] = ['#F25022', '#7FBA00', '#00A4EF', '#FFB900'];
 
-  @Output() couleurChoisie = new EventEmitter<string>();
-  choisir(couleur: string) {
-    console.log('clic', couleur);
+  @Output() readonly couleurChoisie = new EventEmitter<string>();
+
+  protected choisir(couleur: string): void {
     this.couleurChoisie.emit(couleur);
   }
 }

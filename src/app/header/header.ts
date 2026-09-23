@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-header',
-  styleUrl: './header.scss',
   templateUrl: './header.html',
+  styleUrl: './header.scss'
 })
-export class Header {}
+export class Header {
+  @Input() prenoms: string = '';
+}

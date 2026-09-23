@@ -4,19 +4,17 @@ import { Header } from './header/header';
 import {Footer} from './footer/footer';
 import { Logo } from './logo/logo';
 
+
 @Component({
-  imports: [RouterOutlet, Header, Footer, Logo],
   selector: 'app-root',
-  styleUrl: './app.scss',
+  imports: [Header, Footer, Logo],
   templateUrl: './app.html',
+  styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('InsafeMalakTP1');
+  protected couleurFond: string = 'white';
 
-  couleurFond = 'white';
-
-  changerCouleur(couleur: string) {
+  protected changerCouleur(couleur: string): void {
     this.couleurFond = couleur;
   }
 }
-
