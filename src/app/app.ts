@@ -1,13 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { NgStyle } from '@angular/common';
 import { Header } from './header/header';
-import {Footer} from './footer/footer';
+import { Footer } from './footer/footer';
 import { Logo } from './logo/logo';
-
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, Logo],
+  imports: [Header, Footer, Logo, NgStyle],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

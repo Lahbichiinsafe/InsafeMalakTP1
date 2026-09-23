@@ -1,7 +1,9 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-logo',
+  imports: [NgStyle],
   templateUrl: './logo.html',
   styleUrl: './logo.scss'
 })

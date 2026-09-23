@@ -1,5 +1,5 @@
 <div class="logo">
-  @for (c of couleurs; track c) {
-    <div class="case" [style.background-color]="c" (click)="choisir(c)"></div>
+  @for (couleur of couleurs; track couleur) {
+    <div class="case" [ngStyle]="{ 'background-color': couleur }" (click)="choisir(couleur)"></div>
   }
 </div>
